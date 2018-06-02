@@ -1,12 +1,24 @@
 {
   "name": "vformio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "src/index",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirzap/vformio.git"
   },
+  "keywords": [
+    "formio",
+    "Form.io",
+    "vue",
+    "vue.js",
+    "forms"
+  ],
+  "author": "Mirza Pasic <mirza@bosnadev.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirzap/vformio/issues"
+  },
+  "homepage": "https://github.com/mirzap/vformio#readme",
   "dependencies": {
     "vue": "^2.5.16",
     "formiojs": "^3.0.0-rc.5",

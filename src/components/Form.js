@@ -1,4 +1,7 @@
 import Form from 'formiojs/Form'
+import AllComponents from 'formiojs/components';
+import Components from 'formiojs/components/Components';
+Components.setComponents(AllComponents);
 
 export default {
   props: {

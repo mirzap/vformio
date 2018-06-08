@@ -21,7 +21,7 @@
   "homepage": "https://github.com/mirzap/vformio#readme",
   "dependencies": {
     "vue": "^2.5.16",
-    "formiojs": "^3.0.0-rc.5",
+    "formiojs": "^3.0.0-rc.9",
     "vue-class-component": "^6.2.0",
     "vue-property-decorator": "^6.1.0"
   },

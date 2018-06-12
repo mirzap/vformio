@@ -84,3 +84,47 @@ Vue instance has an access to all events triggered from the form. You can set ev
 <MyForm :form="form" @submit="onSubmit"/> 
 ```
 See [Form.io Events](https://github.com/formio/formio.js/wiki/Form-Renderer#events) for all the available events.
+
+# FormBuilder
+
+Register the component:
+```vue
+import { FormBuilder } from 'vformio';
+
+export default {
+  name: 'app',
+  components: { FormBuilder },
+  data () {
+    return {
+      form: { display: 'form' }
+    }
+  },
+  computed: {
+    options: {
+      builder: {
+        advanced: false,
+        data: false,
+        basic: true
+      }
+    }
+  },
+  methods: {
+    onChange (schema) { console.log(schema) },
+  }
+}
+```
+
+now when you have registered `FormBuilder` component you can use it inside the `template` section:
+
+```vue
+<template>
+  <div id="app">
+    <FormBuilder :form="form" :options="options" @change="onChange"></FormBuilder>
+  </div>
+</template>
+```
+
+
+# License
+
+Released under the [MIT License](http://www.opensource.org/licenses/MIT).
